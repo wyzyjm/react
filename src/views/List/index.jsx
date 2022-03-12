@@ -8,8 +8,9 @@ export default class Hello extends Component {
 
     // 页面挂载
     componentDidMount() {
-        this.token = PubSub.subscribe("getDate", (msg, data) => this.setState(data))
+        this.token = PubSub.subscribe("getDate", (msg, data) => this.setState(data)) // 接收值
     }
+    // 组件销毁
     componentWillUnmount() {
         PubSub.unsubscribe(this.token) // 组件销毁, 清除订阅
     }

@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import PubSub from "pubsub-js"
+import PubSub from "pubsub-js" // 兄弟间传值
+
 import Text from "../../component/Text"
 import "./index.css"
 export default class Hello extends Component {
