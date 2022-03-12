@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from "react"
+import Hello from "./views/Hello"
+import Welcom from "./views/Welcom"
+import List from "./views/List"
+export default class App extends Component {
+    render() {
+        return (
+            <h2>
+                <Hello />
+                <List />
+                <Welcom />
+            </h2>
+        )
+    }
 }
-
-export default App;
