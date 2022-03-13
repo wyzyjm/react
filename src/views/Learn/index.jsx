@@ -4,14 +4,16 @@ import React, { Component } from "react"
  */
 // import Refs from "../../component/Base/Refs" // ref
 // import Forms from "../../component/Base/Forms" // ref实践 + 表单收集
-import LifeOld from "../../component/Base/LifeOld" // old life
+// import LifeOld from "../../component/Base/LifeOld" // 旧 life
+// import LifeNew from "../../component/Base/LifeNew" // 新 life
 export default class Lean extends Component {
     render() {
         return (
             <div>
                 {/* <Refs /> */}
                 {/* <Forms /> */}
-                <LifeOld />
+                {/* <LifeOld /> */}
+                {/* <LifeNew /> */}
             </div>
         )
     }

@@ -1,0 +1,8 @@
+.list {
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+}
+.list > li {
+    line-height: 30px;
+}

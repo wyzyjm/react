@@ -1,17 +1,9 @@
 import axios from "axios"
+import { baseURL, timeout } from "./config"
 
-let baseURL = ""
-switch (process.env.NODE_ENV === "development") {
-    case "development":
-        baseURL = "http://localhost::3000"
-        break
-
-    default:
-        break
-}
 const service = axios.create({
     baseURL,
-    timeout: 5000
+    timeout
 })
 // 设置请求头
 service.defaults.headers.post["Content-Type"] = "application/json" // post
